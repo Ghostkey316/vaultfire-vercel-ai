@@ -1,0 +1,33 @@
+{
+  "name": "@vaultfire/vercel-ai",
+  "version": "1.0.0",
+  "description": "Vercel AI SDK integration for Vaultfire Protocol — trust-gating middleware and on-chain verification tools for any AI provider.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "module": "dist/index.js",
+  "files": ["dist", "README.md", "examples"],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "node --experimental-vm-modules node_modules/.bin/jest --config jest.config.js",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": ["vaultfire", "vercel", "ai-sdk", "ai-agents", "trust", "middleware", "erc-8004", "bonds"],
+  "author": "Ghostkey316",
+  "license": "MIT",
+  "repository": { "type": "git", "url": "https://github.com/Ghostkey316/vaultfire-vercel-ai.git" },
+  "homepage": "https://github.com/Ghostkey316/vaultfire-vercel-ai#readme",
+  "engines": { "node": ">=18.0.0" },
+  "dependencies": { "ethers": "^6.10.0", "zod": "^3.22.0" },
+  "peerDependencies": { "ai": ">=4.0.0" },
+  "peerDependenciesMeta": { "ai": { "optional": true } },
+  "devDependencies": {
+    "ai": "^4.0.0",
+    "@types/node": "^20.10.6",
+    "@types/jest": "^29.5.11",
+    "typescript": "^5.3.3",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.1.1"
+  },
+  "publishConfig": { "access": "public", "registry": "https://registry.npmjs.org/" }
+}
