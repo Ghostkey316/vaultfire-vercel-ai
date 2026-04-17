@@ -89,7 +89,7 @@ describe('chains', () => {
     const cfg = CHAINS.base;
     expect(cfg.chainId).toBe(8453);
     expect(cfg.contracts.identity).toBe('0x35978DB675576598F0781dA2133E94cdCf4858bC');
-    expect(cfg.contracts.partnership).toBe('0xC574CF2a09B0B470933f0c6a3ef422e3fb25b4b4');
+    expect(cfg.contracts.partnership).toBe('0x01C479F0c039fEC40c0Cf1c5C921bab457d57441');
   });
 
   test('avalanche chain has correct chainId', () => {
